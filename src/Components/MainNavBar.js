@@ -6,7 +6,7 @@ const MainNavBar = () => {
   return (
     <>
       {/* desktop nam start here */}
-      <div className="desktop-nav font-Inter py-8 px-40 lg:px-8 xl:px-28 2xl:px-40 hidden lg:block">
+      <div className="max-w-[1560px] mx-auto desktop-nav font-Inter py-8 px-40 lg:px-8 xl:px-28 2xl:px-40 hidden lg:block">
         <div className="desktop-nav-main grid grid-cols-2">
           <div className="desktop-nav-left-part flex gap-16 items-center">
             {/* desktop nav logo here */}
@@ -17,7 +17,7 @@ const MainNavBar = () => {
                   aria-hidden="true"
                   width="40"
                   height="40"
-                  class="fill-cyan-500"
+                  class="fill-blue-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -34,13 +34,10 @@ const MainNavBar = () => {
 
             {/*desktop nav links here */}
             <div className="nav-links flex gap-10 text-sm text-gray-600 font-[400]">
-              <a href="#">Features</a>
-              <a href="#">Features</a>
-              <a href="#">Features</a>
-              <a href="#">FAQs</a>
-              <a href="#">Reviews</a>
-              <a href="#">Pricing</a>
-              <a href="#">FAQs</a>
+              <a href="#feature">Features</a>
+              <a href="#review">Reviews</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#faq">FAQs</a>
             </div>
           </div>
 
@@ -49,13 +46,13 @@ const MainNavBar = () => {
             <div className="desktop-nav-buttons flex gap-4">
               <button
                 type="button"
-                class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2 "
+                class="text-gray-900 cursor-pointer bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2 "
               >
                 Log in
               </button>
               <button
                 type="button"
-                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2"
+                class="text-white cursor-pointer bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2"
               >
                 Download
               </button>
@@ -169,10 +166,10 @@ const MainNavBar = () => {
 
               {/* nav links */}
               <div className="nav-links-groups flex flex-col text-left font-Inter gap-3 px-6 text-gray-600 mt-10">
-                <a href="#">Features</a>
-                <a href="#">Reviews</a>
-                <a href="#">Pricing</a>
-                <a href="#">FAQs</a>
+                <a onClick={()=>setCloseState(!closeState)} href="#mFeature">Features</a>
+                <a onClick={()=>setCloseState(!closeState)} href="#review">Reviews</a>
+                <a onClick={()=>setCloseState(!closeState)} href="#pricing">Pricing</a>
+                <a onClick={()=>setCloseState(!closeState)} href="#faq">FAQs</a>
               </div>
 
               {/* button groups */}

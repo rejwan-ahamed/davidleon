@@ -2,7 +2,7 @@ import React from "react";
 
 const FAQs = () => {
   return (
-    <div className="text-left font-Inter">
+    <div id="faq" className="text-left font-Inter">
       <section
         id="faqs"
         aria-labelledby="faqs-title"

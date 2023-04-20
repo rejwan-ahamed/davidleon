@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div>
       {/* hero section desktop view only start here */}
-      <div className="hero_section-main font-Inter hidden px-40 mt-20 lg:px-8 xl:px-28 2xl:px-40 lg:flex">
+      <div className="max-w-[1560px] mx-auto hero_section-main font-Inter hidden px-40 mt-20 lg:px-8 xl:px-28 2xl:px-40 lg:flex">
         <div className="hero-section-left-part flex flex-col items-start w-[50%]">
           <h1 className="text-4xl text-black font-[500]">
             Invest at the perfect time.

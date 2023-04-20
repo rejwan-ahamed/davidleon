@@ -2,7 +2,7 @@ import React from "react";
 
 const PricingSection = () => {
   return (
-    <div>
+    <div id="pricing">
       <section
         id="pricing"
         aria-labelledby="pricing-title"

@@ -1,0 +1,12 @@
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    margin-top: 1rem;
+    position: relative;
+}
+
+span.swiper-pagination-bullet {
+    background: white; 
+    width: 20px;
+    height: 3px;
+    border-radius: 0px;
+}
+
